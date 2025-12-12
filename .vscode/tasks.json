@@ -3,6 +3,13 @@
 	"tasks": [
 		{
 			"type": "shell",
+			"label": "Conan: List profiles",
+			"command": "conan profile detect --force",
+			"detail": "List available conan profiles on the system",
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
 			"label": "Conan Configure Debug",
 			"command": "conan install . --output-folder=build --build=missing -s build_type=Debug",
 			"detail": "CMake template test task",
